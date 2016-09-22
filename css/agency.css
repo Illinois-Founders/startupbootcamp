@@ -99,6 +99,16 @@ fieldset[disabled] .btn-primary.active {
   color: #E87722;
   background-color: white;
 }
+.apply {
+  background-color: #222222;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  border-radius: 3px;
+  font-size: 18px;
+  padding: 20px 40px;
+}
+
 .btn-xl {
   color: white;
   background-color: #E87722;
