@@ -757,3 +757,7 @@ img::-moz-selection {
 body {
   webkit-tap-highlight-color: #E87722;
 }
+.special-event {
+  background: #ff8f3a;
+  padding: 10px;
+}
