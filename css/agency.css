@@ -832,6 +832,6 @@ body {
   -webkit-transform: scaleY(1);
 }
 .card-img-top {
-  max-width: 100%;
+  width: 100%;
   object-fit: cover;
 }
