@@ -476,7 +476,7 @@ section h3.section-subheading {
   margin-top: 0;
   color: inherit;
 }
-.timeline .timeline-panel .special-event .timeline-heading h3 {
+.timeline .timeline-panel .special-event .timeline-heading a {
   margin-top: 0;
   color: black;
 }
