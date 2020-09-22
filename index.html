@@ -45,16 +45,31 @@
         ga('send', 'pageview');
     </script>
 
-    <!--bio read more CSS -->
+    <!-- bio read more CSS -->
     <style>
-        #more {display: none;}
+        #connor-more {display: none;}
+    </style>
+    <style>
+        #ben-more {display: none;}
+    </style>
+    <style>
+        #dfa-more {display: none;}
+    </style>
+    <style>
+        #elizabeth-more {display: none;}
+    </style>
+    <style>
+        #harlee-more {display: none;}
+    </style>
+    <style>
+        #alex-more {display: none;}
     </style>
 
-    <!-- read_more script for bio read more button -->
+    <!-- read_more script for bio read more button, takes more variable to differentiate speakers -->
     <script>
-        function read_more() {
+        function read_more(more) {
             var dots = document.getElementById("dots");
-            var moreText = document.getElementById("more");
+            var moreText = document.getElementById(more);
             var btnText = document.getElementById("myBtn");
         
             if (dots.style.display === "none") {
@@ -467,8 +482,8 @@
                             <img src="img/team/connor.jpeg" class="img-responsive img-circle" alt="">
                         </a>
                         <h4>Connor Lake</h4>
-                        <p class="text-muted">Connor is a U of I computer engineering alum.  He now works as a security focused backend developer at GoDaddy<span id="dots">...</span><span id="more">, and works with Ben running Stackend Solutions building products for startups</span></p>
-                        <button onclick="read_more()" id="myBtn">Read more</button>
+                        <p class="text-muted">Connor is a U of I computer engineering alum.  He now works as a security focused backend developer at GoDaddy<span id="dots">...</span><span id="connor-more">, and works with Ben running Stackend Solutions building products for startups</span></p>
+                        <button onclick="read_more('connor-more')" id="myBtn">Read more</button>
                     </div>
                 </div>
                 <div class="col-sm-4">
@@ -477,8 +492,8 @@
                             <img src="img/team/ben.jpg" class="img-responsive img-circle" alt="">
                         </a>
                         <h4>Ben Thayer</h4>
-                        <p class="text-muted">Ben is a former Microgrant Panelist. He has experience working on several startups and exploring many ideas<span id="dots">...</span><span id="more">. Now, Ben works with Connor as COO of Stackend Solutions where he keeps the firm profitable by keeping a critical eye and keeping things actionable. Ben's day to day role consists of managing projects, negotiating contracts, and participating in executive decision-making.</span></p>
-                        <button onclick="read_more()" id="myBtn">Read more</button>
+                        <p class="text-muted">Ben is a former Microgrant Panelist. He has experience working on several startups and exploring many ideas<span id="dots">...</span><span id="ben-more">. Now, Ben works with Connor as COO of Stackend Solutions where he keeps the firm profitable by keeping a critical eye and keeping things actionable. Ben's day to day role consists of managing projects, negotiating contracts, and participating in executive decision-making.</span></p>
+                        <button onclick="read_more('ben-more')" id="myBtn">Read more</button>
                     </div>
                 </div>
                 <div class="col-sm-4">
@@ -487,8 +502,8 @@
                             <img src="img/team/DFA.png" class="img-responsive img-circle" alt="">
                         </a>
                         <h4>Design For America</h4>
-                        <p class="text-muted">Design for America at University of Illinois Urbana-Champaign is a registered 501(c)3 non-profit and student organization<span id="dots">...</span><span id="more">. We focus on learning the human-centered design process to create solutions for social challenges in our local communities. Our studio is part of a larger award-winning national network of passionate creators & innovators revolutionizing the way university students engage with & improve the world around us.</span></p>
-                        <button onclick="read_more()" id="myBtn">Read more</button>
+                        <p class="text-muted">Design for America at University of Illinois Urbana-Champaign is a registered 501(c)3 non-profit and student organization<span id="dots">...</span><span id="dfa-more">. We focus on learning the human-centered design process to create solutions for social challenges in our local communities. Our studio is part of a larger award-winning national network of passionate creators & innovators revolutionizing the way university students engage with & improve the world around us.</span></p>
+                        <button onclick="read_more('dfa-more')" id="myBtn">Read more</button>
                     </div>
                 </div>
             </div>
@@ -499,8 +514,8 @@
                             <img src="img/team/elizabeth.jpg" class="img-responsive img-circle" alt="">
                         </a>
                         <h4>Elizabeth Luckman</h4>
-                        <p class="text-muted">Elizabeth Luckman is a Clinical Assistant Professor in Business Administration at the Gies College of Business<span id="dots">...</span><span id="more">. She seeks to help people navigate the challenging human dimensions of organizations through her work as an educator, researcher, and coach. She works with individuals and teams to cultivate a mindset of purpose and problem-solving, focused on continuous learning, toward the pursuit of innovative and ethical business practices. She holds a PhD in Organizational Behavior from Washington University in St Louis, an MBA from The Fisher College of Business at The Ohio State University, and a BA from Wellesley College.</span></p>
-                        <button onclick="read_more()" id="myBtn">Read more</button>
+                        <p class="text-muted">Elizabeth Luckman is a Clinical Assistant Professor in Business Administration at the Gies College of Business<span id="dots">...</span><span id="elizabeth-more">. She seeks to help people navigate the challenging human dimensions of organizations through her work as an educator, researcher, and coach. She works with individuals and teams to cultivate a mindset of purpose and problem-solving, focused on continuous learning, toward the pursuit of innovative and ethical business practices. She holds a PhD in Organizational Behavior from Washington University in St Louis, an MBA from The Fisher College of Business at The Ohio State University, and a BA from Wellesley College.</span></p>
+                        <button onclick="read_more('elizabeth-more')" id="myBtn">Read more</button>
                     </div>
                 </div>
                 <div class="col-sm-4">
@@ -509,8 +524,8 @@
                             <img src="img/team/harlee.jpg" class="img-responsive img-circle" alt="">
                         </a>
                         <h4>Harlee Sorkin</h4>
-                        <p class="text-muted">Harlee Sorkin is Clinical Assistant Professor in the Technology Entrepreneur Center at the University of Illinois Grainger College of Engineering<span id="dots">...</span><span id="more">. He is also co-founder and Managing Director of Common Place Holdings, LLC, a health tech venture studio that provides management & seed funding for companies that it helps to form.  This builds upon a 15-year consulting practice with an emphasis on business formation, capitalization, product and customer development.  Prior to that, Harlee helped to lead Traco Labs, Inc., a manufacturer of health & nutrition ingredients, to a successful exit to Degussa, AG. Harlee is an NSF I-Corps instructor and Entrepreneur-in-Residence at EnterpriseWorks in the Research Park.  He holds a BS in Psychology from the University of Illinois.</span></p>
-                        <button onclick="read_more()" id="myBtn">Read more</button>
+                        <p class="text-muted">Harlee Sorkin is Clinical Assistant Professor in the Technology Entrepreneur Center at the University of Illinois Grainger College of Engineering<span id="dots">...</span><span id="harlee-more">. He is also co-founder and Managing Director of Common Place Holdings, LLC, a health tech venture studio that provides management & seed funding for companies that it helps to form.  This builds upon a 15-year consulting practice with an emphasis on business formation, capitalization, product and customer development.  Prior to that, Harlee helped to lead Traco Labs, Inc., a manufacturer of health & nutrition ingredients, to a successful exit to Degussa, AG. Harlee is an NSF I-Corps instructor and Entrepreneur-in-Residence at EnterpriseWorks in the Research Park.  He holds a BS in Psychology from the University of Illinois.</span></p>
+                        <button onclick="read_more('harlee-more')" id="myBtn">Read more</button>
                     </div>
                 </div>
                 <div class="col-sm-4">
@@ -519,8 +534,8 @@
                             <img src="img/team/Alex.jpg" class="img-responsive img-circle" alt="">
                         </a>
                         <h4>Alex Gorsuch</h4>
-                        <p class="text-muted">Alex has harnessed his skillset of lean, stakeholder-focused innovation to build hundreds of products spanning nearly every industry<span id="dots">...</span><span id="more"> but concentrating on AgTech, DefenseTech, and MedTech. Currently, he continues to work on his own endeavors (deploying low SWaP-C ruggedized autonomous systems, diagnostics, human performance technology, and sensortech) as well as contract engineering. Additionally, he has Entrepreneur in Residence, Instructor, and Mentor roles across the world spanning accelerators, economic development, incubators, and universities- he has helped thousands of tech entrepreneurs solve barriers related to stakeholder discovery, SBIR and technical hurdles, as well as upfront prototyping and ideation.</span></p>
-                        <button onclick="read_more()" id="myBtn">Read more</button>
+                        <p class="text-muted">Alex has harnessed his skillset of lean, stakeholder-focused innovation to build hundreds of products spanning nearly every industry<span id="dots">...</span><span id="alex-more"> but concentrating on AgTech, DefenseTech, and MedTech. Currently, he continues to work on his own endeavors (deploying low SWaP-C ruggedized autonomous systems, diagnostics, human performance technology, and sensortech) as well as contract engineering. Additionally, he has Entrepreneur in Residence, Instructor, and Mentor roles across the world spanning accelerators, economic development, incubators, and universities- he has helped thousands of tech entrepreneurs solve barriers related to stakeholder discovery, SBIR and technical hurdles, as well as upfront prototyping and ideation.</span></p>
+                        <button onclick="read_more('alex-more')" id="myBtn">Read more</button>
                     </div>
                 </div>
             </div>
