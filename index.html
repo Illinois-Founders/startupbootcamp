@@ -64,20 +64,35 @@
     <style>
         #alex-more {display: none;}
     </style>
+    <style>
+        #myers-more {display: none;}
+    </style>
+    <style>
+        #knoll-more {display: none;}
+    </style>
+    <style>
+        #ryan-more {display: none;}
+    </style>
+    <style>
+        #clark-more {display: none;}
+    </style>
+    <style>
+        #taylor-more {display: none;}
+    </style>
 
     <!-- read_more script for bio read more button, takes more variable to differentiate speakers -->
     <script>
         function read_more(dots, more) {
-            var dots = document.getElementById(dots);
+            var theseDots = document.getElementById(dots);
             var moreText = document.getElementById(more);
             var btnText = document.getElementById("myBtn");
         
-            if (dots.style.display === "none") {
-                dots.style.display = "inline";
+            if (theseDots.style.display === "none") {
+                theseDots.style.display = "inline";
                 btnText.innerHTML = "Read more";
                 moreText.style.display = "none";
             } else {
-                dots.style.display = "none";
+                theseDots.style.display = "none";
                 btnText.innerHTML = "Read less";
                 moreText.style.display = "inline";
             }
@@ -551,32 +566,66 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-sm-3">
+                <div class="col-sm-4">
                     <div class="team-member">
-                        <img class="img-responsive img-circle" alt="" src="img/about/placeholder.jpg">
-                        <h4>Coming Soon!</h4>
-                        <p class="text-muted">Someone Awesome</p>
+                        <a href="" target="_blank">
+                            <img src="img/team/myers.png" class="img-responsive img-circle" alt="">
+                        </a>
+                        <h4>Christopher Myers</h4>
+                        <p class="text-muted">Chris Myers held the position of Vice President, Advanced Technology and Engineering from 2018 to 2020. Myers was responsible for<span id="myers-dots">...</span><span id="myers-more"> corporate support of our product engineering and manufacturing operations. These include Product Technology and Innovation, Global Engineering Services (Mechanical Engineering, Manufacturing Engineering, and Software Engineering), Enterprise Electric Drives, Advanced Marketing, Enterprise Strategic Manufacturing, Enterprise Strategic Quality, and Environment, Health and Safety. He also led the company's global engineering centers in India, Mexico, Germany, and the United States, and had responsibility for the global product development process.</span></p>
+                        <button onclick="read_more('myers-dots','myers-more')" id="myBtn">Read more</button>
                     </div>
                 </div>
-                <div class="col-sm-3">
+                <div class="col-sm-4">
                     <div class="team-member">
-                        <img class="img-responsive img-circle" alt="" src="img/about/placeholder.jpg">
-                        <h4>Coming Soon!</h4>
-                        <p class="text-muted">Someone Brilliant</p>
+                        <a href="" target="_blank">
+                            <img src="img/team/knoll.png" class="img-responsive img-circle" alt="">
+                        </a>
+                        <h4>Samantha Knoll</h4>
+                        <p class="text-muted">Samantha Knoll is a Global Product Lead for the Intelligence & Analytics domain at the Climate Corporation, a digital agriculture company<span id="knoll-dots">...</span><span id="knoll-more"> and subsidiary of Bayer Crop Science. Since joining Climate in 2016, she has held roles in R&D, Open Innovation & Strategic Partnerships, and Product Management. Prior to Climate, Samantha co-founded a company aimed at optimizing farm operations through drone imagery. She earned her PhD ('16), MS ('13), and BS ('11) in Mechanical Science & Engineering from UIUC, and was a Class XV graduate of the Hoeft Technology and Management Program.</span></p>
+                        <button onclick="read_more('knoll-dots','knoll-more')" id="myBtn">Read more</button>
                     </div>
                 </div>
-                <div class="col-sm-3">
+                <div class="col-sm-4">
                     <div class="team-member">
-                        <img class="img-responsive img-circle" alt="" src="img/about/placeholder.jpg">
-                        <h4>Coming Soon!</h4>
-                        <p class="text-muted">Someone Philosophic</p>
+                        <a href="" target="_blank">
+                            <img src="img/team/ryan.png" class="img-responsive img-circle" alt="">
+                        </a>
+                        <h4>Ryan</h4>
+                        <p class="text-muted">Ryan believes that success means nothing unless you bring others along the way. That’s part of the reason why he has and continues to mentor<span id="ryan-dots">...</span><span id="ryan-more"> and give back as often as possible. He is the Co-founder and CTO of Ticket Falcon, an online event management and ticketing platform with instant payouts. Ryan earned a Bachelor’s Degree in Accountancy with a Minor in Technology and Management from the University of Illinois at Urbana-Champaign. Ryan is a lifetime member of Alpha Phi Alpha Fraternity, Inc. and also a member of the 100 Black Men of Chicago where he helps improve the quality of life and enhance the educational opportunities of African-American males throughout the Greater Chicago area. Ryan also sits on the National Advisory Council of the National Black MBA Association (NBMBAA), which hosts the largest career conference in the United States each year and is comprised of over 20,000 active members across the world. In his spare time, Ryan enjoys cooking, traveling, working out and playing instruments like the piano, keyboard, and organ.</span></p>
+                        <button onclick="read_more('ryan-dots','ryan-more')" id="myBtn">Read more</button>
                     </div>
                 </div>
-                <div class="col-sm-3">
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
                     <div class="team-member">
-                        <img class="img-responsive img-circle" alt="" src="img/about/placeholder.jpg">
-                        <h4>Coming Soon!</h4>
-                        <p class="text-muted">Someone Masterly</p>
+                        <a href="" target="_blank">
+                            <img src="img/team/clark.png" class="img-responsive img-circle" alt="">
+                        </a>
+                        <h4>Ashton Clark</h4>
+                        <p class="text-muted">Ashton Clark is an Information Technology (IT) leader/intrapreneur and nationally award-winning entrepreneur who started his first successful business at the age of 13<span id="clark-dots">...</span><span id="clark-more">. He is the Co-founder and CEO of Ticket Falcon, an online event management and ticketing platform with instant payouts. Ashton is an alumnus of the University of Illinois at Urbana-Champaign College of Business and Engineering and Northwestern’s Kellogg School of Management. At Kellogg, Ashton earned The Dean’s Distinguished Service award for his tenacity, commitment to scholastic excellence and most importantly, community impact for recruiting over 25 African American students to Northwestern’s evening and weekend MBA program. He firmly believes that service is the rent we pay for living and exemplifies this by giving back. Ashton serves on the Board of Directors for the National Black MBA Association (Atlanta) which hosts the largest career fair in the country. He leads the Technology Task Force and Chairs the Marketing and Communications committee. Ashton won NBMBAA’s entrepreneur pitch competition, the White Board Challenge in 2012. He also serves on the Board of Directors for the People’s Music School (Chicago) which is the largest free music school for youth in the country. Ashton serves on the Development committee and is helping the organization expand its reach to more students digitally.Ashton is a member of the 100 Black Men of Chicago and lifetime member of the illustrious Alpha Phi Alpha Fraternity, Inc.</span></p>
+                        <button onclick="read_more('clark-dots','clark-more')" id="myBtn">Read more</button>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <a href="" target="_blank">
+                            <img src="img/team/taylor.png" class="img-responsive img-circle" alt="">
+                        </a>
+                        <h4>Ken Taylor</h4>
+                        <p class="text-muted">Ken Taylor has been mentoring and lecturing on entrepreneurship topics for many years in the Champaign-Urbana community. He has mentored many students participating in the Cozad New Venture Competition<span id="taylor-dots">...</span><span id="taylor-more">, having mentored two first place teams, a second place team, a third place team and a semi-finalist team. He has mentored the Parkland College CobraVenture Student Entrepreneur Program and the Young Entrepreneurship Program for middle and high school students. He has lectured for Founders Startup Bootcamp, TE 360 Lectures in Engineering Entrepreneurship and was a visiting lecturer for ENG 298 Foundations in Business and Entrepreneurship at UIUC. He got his start in entrepreneurship by co-founding a computer consulting company where he helped raise VC funding for a fingerprint biometric device. He currently serves as the Cloud Architect for Technology Services at the University of Illinois.</span></p>
+                        <button onclick="read_more('taylor-dots','taylor-more')" id="myBtn">Read more</button>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <a href="https://www.linkedin.com/in/aegorsuch/" target="_blank">
+                            <img src="img/team/Alex.jpg" class="img-responsive img-circle" alt="">
+                        </a>
+                        <h4>Alex Gorsuch</h4>
+                        <p class="text-muted">Alex has harnessed his skillset of lean, stakeholder-focused innovation to build hundreds of products spanning nearly every industry<span id="alex2-dots">...</span><span id="alex2-more"> but concentrating on AgTech, DefenseTech, and MedTech. Currently, he continues to work on his own endeavors (deploying low SWaP-C ruggedized autonomous systems, diagnostics, human performance technology, and sensortech) as well as contract engineering. Additionally, he has Entrepreneur in Residence, Instructor, and Mentor roles across the world spanning accelerators, economic development, incubators, and universities- he has helped thousands of tech entrepreneurs solve barriers related to stakeholder discovery, SBIR and technical hurdles, as well as upfront prototyping and ideation.</span></p>
+                        <button onclick="read_more('alex2-dots','alex2-more')" id="myBtn">Read more</button>
                     </div>
                 </div>
             </div>
